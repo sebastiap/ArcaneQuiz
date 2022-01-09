@@ -1,0 +1,402 @@
+/* BASIC STYLES */
+
+html {
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    color: #000000;
+    font-family: 'Rock Salt', serif;
+    background: url(../images/fondo.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    font-family: 'Rock Salt';
+    font-size: 3rem!important;
+}
+
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.texto-contraste {
+    color: #7DF9FF;
+}
+
+.fuchsia {
+    color: fuchsia;
+}
+
+/* HEADER */
+
+.header-container {
+    width: 100%;
+    height: 100%;
+    animation: fadeIn 1s ease-in-out 0.25s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+header {
+    max-height: 100%;
+	margin-bottom:12%;
+    height: auto;
+    background-color: transparent;
+}
+
+header img {
+    float: left;
+    width: 50%;
+    height: auto;
+    max-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.smaller {
+    font-size: 2.5rem!important;
+}
+
+
+
+/* WRAPPER */
+
+.wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 0 0 100px;
+    position: relative;
+}
+
+
+
+/* MAIN */
+
+main {
+    display: none;
+    margin-bottom: auto;
+    position: relative;
+    animation: fadeIn 1s ease-in-out 0s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+
+
+/* MIDDLE */
+
+.middle {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+img.splash {
+    max-width: 200px;
+    width: 100%;
+}
+
+img.splash:hover {
+    transform: rotate(7deg);
+    cursor: pointer;
+}
+
+h2#timer {
+    font-size: 1.3rem;
+}
+
+#pregunta-activa h2 {
+    display: inline-block;
+    text-align: left;
+}
+
+#resultado-respuesta {
+    height: 20px;
+}
+
+#resultado-respuesta p {
+    margin-bottom: 5px!important;
+}
+
+.texto-correcto {
+    color: green;
+    font-weight: bold;
+}
+
+#campo-imagen {
+    min-height: 270px;
+}
+
+#campo-imagen img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+#lista-respuestas {
+    list-style-type: none;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0!important;
+}
+
+.item-respuesta {
+    font-size: .9rem;
+    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 5px solid black;
+    background-color: #96b403;
+}
+
+.item-respuesta:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.correct {
+    background-color: fuchsia;
+    color: white;
+    border: 5px solid fuchsia;
+    transition: all .2s ease-in-out;
+}
+
+.correct:hover {
+    background-color: #7DF9FF;
+	border: 5px solid #7DF9FF;
+}
+
+.wrong {
+    background-color: red;
+    border: 5px solid red;
+    color: white;
+    text-decoration: line-through black;
+    transition: all .2s ease-in-out;
+}
+
+.wrong:hover {
+    background-color: red;
+}
+
+
+
+/* ANIMATION FOR IMAGES AND ANSWER LISTS */
+
+.flip {
+    animation: flipIt 1s ease-in-out 0s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+.flipback {
+    animation: flipBack 1s ease-in-out 0s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+
+
+/* BOTONES PARA RESULTADO Y RESET */
+
+#resultados {
+    animation: fadeIn 1s ease-in-out 0.25s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+#resultados,
+#reset-game {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 12px;
+    border: 5px solid black;
+    border-radius: 8px;
+    background: #96b403;
+    font-family: 'Cutive', serif;
+}
+
+#resultados:hover,
+#reset-game:hover {
+    background-color: black;
+    color: fuchsia;
+    cursor: pointer;
+}
+
+
+.brillo {
+	animation: fadeIn 1s ease-in-out 0.25s;
+    animation-fill-mode: backwards;
+}
+
+/* FIN DEL JUEGO */
+
+.endgame {
+    display: none;
+    width: 100%;
+    height: 100%;
+    animation: fadeIn 1s ease-in-out 0.25s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+.tally img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out 0.5s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+	background-color: black;
+}
+
+footer p {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flipIt {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes flipBack {
+    from {
+        transform: rotateY(360deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+/* Reduced screen */
+
+@media screen and (max-width: 1250px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Tablet portrait */
+
+@media screen and (max-width: 798px) {
+    h1 {
+        font-size: 2.5rem!important;
+    }
+    h2 {
+        font-size: 1rem!important;
+        line-height: 2rem;
+    }
+    .smaller {
+        font-size: 2rem!important;
+    }
+}
+
+
+/* Small tablets */
+
+@media screen and (max-width: 510px) {
+    h1 {
+        font-size: 2rem!important;
+    }
+    h2 {
+        font-size: 1rem!important;
+        line-height: 1.5rem;
+    }
+    .smaller {
+        font-size: 1.5rem!important;
+    }
+    .item-respuesta {
+        font-size: .7rem;
+    }
+}
+
+
+/* Mobile phones */
+
+@media screen and (max-width: 385px) {
+    header img {
+        width: 50%;
+    }
+    h1 {
+        font-size: 1.5rem!important;
+    }
+    h2 {
+        font-size: .7rem!important;
+    }
+    .smaller {
+        font-size: 1rem!important;
+    }
+    .item-respuesta {
+        font-size: .6rem;
+        padding: 5px 10px;
+    }
+    .pic-row {
+        margin-top: 2rem!important;
+    }
+    #resultado-respuesta p {
+        font-size: .8rem;
+    }
+}

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+    <title>Arcane Game</title>
+<meta name="description" content="Arcane Trivia Game">
+<meta name="keywords" content="Arcane, trivia">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta name="theme-color" content="white" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico?v=2" type="image/x-icon" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container header-container">
+            <div class="row">
+                <header class="col-9 mx-auto mt-3">
+                </header>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <h2 class="texto-contraste">Trivia Arcane</h2>
+                    <img id="iniciarjuego" class="img-fluid splash my-3" src="assets/images/monkeyjinx.png" alt="Boton de Inicio de Juego">
+                    <h2 class="texto-contraste">Presiona para jugar</h2>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="container middle">
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <h2 class="text-center texto-contraste" id="timer">&nbsp;</h2>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div id="pregunta-activa" class="text-center texto-contraste">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div id="resultado-respuesta" class="text-center">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 pic-row">
+                    <div class="col-12">
+                        <div id="campo-imagen" class="text-center">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 text-center" id="answer">
+                        <ul id="lista-respuestas"></ul>
+                    </div>
+                    <div class="col-12 text-center" id="result-holder">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="endgame">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center texto-contraste tally mt-3">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center reset mt-1">
+                        <button id="reset-game"><i class="fa fa-repeat"></i>&nbsp; Jugar otra vez</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	    <!-- SACAR ANTES DE PASAR A ROMI -->	
+        <footer>
+            <p class="texto-contraste ">&copy; <script type="text/javascript">
+                document.write(new Date().getFullYear());
+                </script> Sebastian Picardi 
+				<a href="https://www.linkedin.com/in/sebastian-picardi-914879210/"><i class="fa fa-linkedin-square fuchsia"></i></a>
+				<a href="https://www.instagram.com/capitanpicardi/"><i class="fa fa-instagram fuchsia"></i></a>
+				<a href="https://github.com/sebastiap"><i class="fa fa-github-square fuchsia"></i></a>
+				</p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/javascript/question.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
