@@ -4,7 +4,7 @@ A simple trivia game using JavaScript and jQuery
 
 ## Description
 
-[ArcaneQuiz: The Arcane Trivia Game]()
+[ArcaneQuiz: The Arcane Trivia Game](https://sebastiap.github.io/ArcaneQuiz/)
 
 ![ArcaneQuiz: The Arcane Trivia Game](https://github.com/sebastiap/ArcaneQuiz/blob/main/assets/images/preview.PNG?raw=true)
 
