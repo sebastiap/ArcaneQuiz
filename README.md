@@ -31,5 +31,11 @@ The use of functions within an object was also important to this project. The co
 - Visual Studio Code - Text Editor
 - Git Bash
 
+## Graphic Design
+- Color Selection
+- Image Selection
+- UI / UX
+
 ## Authors
 - **Sebastian Picardi** - [Sebastian Picardi](https://github.com/sebastiap)
+- **Romina Montes de Oca** - [Romina Montes de Oca](https://github.com/rominadesiree)
